@@ -1,0 +1,30 @@
+﻿[
+  {
+    "RegionName": "Bronx",
+    "Region_ID": 1
+  },
+  {
+    "RegionName": "Brooklyn",
+    "Region_ID": 2
+  },
+  {
+    "RegionName": "Manhattan",
+    "Region_ID": 3
+  },
+  {
+    "RegionName": "Queens",
+    "Region_ID": 4
+  },
+  {
+    "RegionName": "Staten Island",
+    "Region_ID": 5
+  },
+  {
+    "RegionName": "Westchester",
+    "Region_ID": 6
+  },
+  {
+    "RegionName": "Pike",
+    "Region_ID": 9
+  }
+]

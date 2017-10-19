@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ReadDataFromJson.SecondPage">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions = "FillAndExpand" VerticalOptions = "StartAndExpand" Padding = "20" Spacing = "10">
+            <DatePicker HorizontalOptions = "FillAndExpand" VerticalOptions = "Start" Date = "{Binding SelectedDate}"></DatePicker>
+			<Label Text = "{Binding FirstLabel}" HorizontalOptions = "CenterAndExpand" VerticalOptions = "StartAndExpand"></Label>
+			<Label Text = "{Binding SecondLabel}" HorizontalOptions = "CenterAndExpand" VerticalOptions = "StartAndExpand"></Label>
+            <Picker ItemsSource="{Binding RootObjectSe}" Title ="{Binding SelectedPickerTitle}" SelectedIndex = "{Binding SelectedPickerIndex}"  ItemDisplayBinding="{Binding RegionName}" SelectedItem="{Binding SelectedMajorGroup}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

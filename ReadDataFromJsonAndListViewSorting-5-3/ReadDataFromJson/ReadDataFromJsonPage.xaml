@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ReadDataFromJson" x:Class="ReadDataFromJson.ReadDataFromJsonPage">
+	<StackLayout Margin="20">
+		<Picker Title="Select a monkey" ItemsSource="{Binding RootObjectSe}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedMajorGroup}" />
+		<SearchBar x:Name = "searchRef" />
+        <Frame HasShadow = "false"  HorizontalOptions = "CenterAndExpand" VerticalOptions = "Start" Padding ="5">
+            <StackLayout Spacing = "5" Orientation = "Horizontal" HorizontalOptions ="FillAndExpand" VerticalOptions = "Start">
+               <Button TextColor = "Black" BorderColor = "Black" BackgroundColor = "Gray"  HorizontalOptions = "FillAndExpand" VerticalOptions = "Start" Text = "    Current Month JSSEs    "/>
+               <Button TextColor = "Black" BorderColor = "Black" BackgroundColor = "Gray" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start" Text = "    All JSSEs    "/>
+            </StackLayout>
+        </Frame>
+		<ListView x:Name="listView" HasUnevenRows = "true" ItemsSource="{Binding OrgRelatedData}" SelectedItem="{Binding YourSelectedItem, Mode=TwoWay}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<ViewCell.View>
+								<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions = "Center">
+                                <StackLayout Orientation = "Horizontal" HorizontalOptions = "FillAndExpand" VerticalOptions =  "Start">
+                                    <StackLayout HorizontalOptions = "Start" Orientation = "Horizontal" VerticalOptions = "Start" Spacing ="0">
+                                       <Label Text = "JSSE Id :" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start"></Label>
+                                      <Label Text = "{Binding JSSE_ID}" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start"></Label>
+                                     </StackLayout>
+                                    
+                                    <StackLayout HorizontalOptions = "EndAndExpand" Orientation = "Horizontal" VerticalOptions = "Start" Spacing ="0">
+                                       <Label Text = "Status :" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start"></Label>
+                                      <Label Text = "{Binding JSSEStatus}" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start"></Label>
+                                     </StackLayout>
+                                </StackLayout>
+                                    <StackLayout HorizontalOptions = "StartAndExpand" Orientation = "Horizontal" VerticalOptions = "Start" Spacing ="0">
+                                       <Label Text = "Date :" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start"></Label>
+                                      <Label Text = "{Binding JSSEDate}" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start"></Label>
+                                     </StackLayout>
+								</StackLayout>
+						</ViewCell.View>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+</ContentPage>

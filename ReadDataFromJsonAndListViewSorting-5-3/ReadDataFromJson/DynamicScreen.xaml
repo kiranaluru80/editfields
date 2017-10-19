@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ReadDataFromJson.DynamicScreen">
+
+	<StackLayout x:Name = "mainStackLayout" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="0,20,0,0">
+
+	<!--	<StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Vertical">
+			<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+				<Label VerticalOptions="Center" Margin="5" Text="Communications" BackgroundColor="Blue" TextColor="White" FontSize="15" FontAttributes="Bold"/>
+			</StackLayout>
+			<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Spacing="10">
+				<StackLayout Orientation="Horizontal">
+					<Button HeightRequest="30" WidthRequest="30" BackgroundColor="Red"/>
+					<Label Text="lgls;g;sgjaspgag" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>-->
+		
+	</StackLayout>
+	
+</ContentPage>
